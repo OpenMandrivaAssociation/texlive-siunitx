@@ -70,6 +70,7 @@ l3packages bundles.
 #- source
 %doc %{_texmfdistdir}/source/latex/siunitx/siunitx.dtx
 %doc %{_texmfdistdir}/source/latex/siunitx/siunitx.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -80,3 +81,5 @@ l3packages bundles.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
