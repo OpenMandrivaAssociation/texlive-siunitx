@@ -1,11 +1,11 @@
-# revision 24604
+# revision 24787
 # category Package
 # catalog-ctan /macros/latex/contrib/siunitx
-# catalog-date 2011-11-14 22:36:53 +0100
+# catalog-date 2011-12-06 22:18:19 +0100
 # catalog-license lppl1.3
-# catalog-version 2.4
+# catalog-version 2.4b
 Name:		texlive-siunitx
-Version:	2.4
+Version:	2.4b
 Release:	1
 Summary:	A comprehensive (SI) units package
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 Typesetting values with units requires care to ensure that the
@@ -45,19 +42,19 @@ The package relies on LaTeX 3 support from the l3kernel and
 l3packages bundles.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
