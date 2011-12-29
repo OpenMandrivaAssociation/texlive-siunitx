@@ -41,16 +41,8 @@ handle all of the possible unit-related needs of LaTeX users.
 The package relies on LaTeX 3 support from the l3kernel and
 l3packages bundles.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -68,7 +60,6 @@ l3packages bundles.
 #- source
 %doc %{_texmfdistdir}/source/latex/siunitx/siunitx.dtx
 %doc %{_texmfdistdir}/source/latex/siunitx/siunitx.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -79,5 +70,3 @@ l3packages bundles.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
