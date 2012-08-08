@@ -1,11 +1,11 @@
-# revision 26194
+# revision 27181
 # category Package
 # catalog-ctan /macros/latex/contrib/siunitx
-# catalog-date 2012-05-03 17:27:09 +0200
+# catalog-date 2012-07-22 18:49:09 +0200
 # catalog-license lppl1.3
-# catalog-version 2.5c
+# catalog-version 2.5g
 Name:		texlive-siunitx
-Version:	2.5c
+Version:	2.5g
 Release:	1
 Summary:	A comprehensive (SI) units package
 Group:		Publishing
