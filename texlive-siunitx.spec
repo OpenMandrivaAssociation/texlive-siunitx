@@ -1,11 +1,11 @@
-# revision 27752
+# revision 27181
 # category Package
 # catalog-ctan /macros/latex/contrib/siunitx
-# catalog-date 2012-09-20 00:39:59 +0200
+# catalog-date 2012-07-22 18:49:09 +0200
 # catalog-license lppl1.3
-# catalog-version 2.5j
+# catalog-version 2.5g
 Name:		texlive-siunitx
-Version:	2.5j
+Version:	2.5g
 Release:	1
 Summary:	A comprehensive (SI) units package
 Group:		Publishing
@@ -70,3 +70,53 @@ l3packages bundles.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.5g-1
++ Revision: 812877
+- Update to latest release.
+
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.5c-1
++ Revision: 805077
+- Update to latest release.
+
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4n-1
++ Revision: 790737
+- Update to latest release.
+
+* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4j-1
++ Revision: 770282
+- Update to latest upstream package
+
+* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4h-1
++ Revision: 762726
+- Update to latest upstream package
+
+* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4f-1
++ Revision: 759065
+- Update to latest upstream release
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4e-2
++ Revision: 756046
+- Rebuild to reduce used resources
+
+* Sat Dec 17 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.4e-1
++ Revision: 743318
+- texlive-siunitx
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.4b-1
++ Revision: 739876
+- texlive-siunitx
+
+* Tue Nov 22 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.4-1
++ Revision: 732611
+- texlive-siunitx
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.3h-1
++ Revision: 719543
+- texlive-siunitx
+- texlive-siunitx
+- texlive-siunitx
+- texlive-siunitx
+
