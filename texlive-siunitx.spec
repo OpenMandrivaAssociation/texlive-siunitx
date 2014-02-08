@@ -6,7 +6,7 @@
 # catalog-version 2.5g
 Name:		texlive-siunitx
 Version:	2.5g
-Release:	1
+Release:	2
 Summary:	A comprehensive (SI) units package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/siunitx
