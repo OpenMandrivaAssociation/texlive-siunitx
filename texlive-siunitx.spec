@@ -1,12 +1,6 @@
-# revision 31333
-# category Package
-# catalog-ctan /macros/latex/contrib/siunitx
-# catalog-date 2013-07-31 13:53:13 +0200
-# catalog-license lppl1.3
-# catalog-version 2.5s
 Name:		texlive-siunitx
-Version:	2.5s
-Release:	9
+Version:	2.7k
+Release:	1
 Summary:	A comprehensive (SI) units package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/siunitx
@@ -51,15 +45,10 @@ l3packages bundles.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/siunitx/config/siunitx-abbreviations.cfg
-%{_texmfdistdir}/tex/latex/siunitx/config/siunitx-binary.cfg
-%{_texmfdistdir}/tex/latex/siunitx/config/siunitx-version-1.cfg
-%{_texmfdistdir}/tex/latex/siunitx/siunitx.sty
-%doc %{_texmfdistdir}/doc/latex/siunitx/README
-%doc %{_texmfdistdir}/doc/latex/siunitx/siunitx.pdf
+%{_texmfdistdir}/tex/latex/siunitx
+%doc %{_texmfdistdir}/doc/latex/siunitx
 #- source
-%doc %{_texmfdistdir}/source/latex/siunitx/siunitx.dtx
-%doc %{_texmfdistdir}/source/latex/siunitx/siunitx.ins
+%doc %{_texmfdistdir}/source/latex/siunitx
 
 #-----------------------------------------------------------------------
 %prep
