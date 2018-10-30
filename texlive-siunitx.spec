@@ -1,6 +1,6 @@
 Name:		texlive-siunitx
 Version:	2.7s
-Release:	2
+Release:	3
 Summary:	A comprehensive (SI) units package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/siunitx
