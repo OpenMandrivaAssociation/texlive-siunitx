@@ -1,5 +1,5 @@
 Name:		texlive-siunitx
-Version:	67346
+Version:	67737
 Release:	1
 Summary:	A comprehensive (SI) units package
 Group:		Publishing
